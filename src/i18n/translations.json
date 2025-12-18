@@ -1,0 +1,899 @@
+{
+  "uz": {
+    "nav": {
+      "home": "Bosh sahifa",
+      "features": "Afzalliklar",
+      "design": "Dizayn",
+      "smart": "Smart",
+      "specs": "Xususiyatlar",
+      "contact": "Aloqa"
+    },
+    "products": {
+      "selectTitle": "Mahsulotni tanlang",
+      "recuperator": {
+        "name": "Aqlli Rekuperator",
+        "short": "Ventilyatsiya tizimi"
+      },
+      "purifier": {
+        "name": "Havo Tozalagich",
+        "short": "Havo tozalash tizimi"
+      }
+    },
+    "hero": {
+      "badge": "Yangi avlod ventilyatsiya tizimi",
+      "title": "Welkin Air",
+      "subtitle": "Aqlli Recuperator",
+      "description": "Uyingizga toza va sog'lom havo olib keling. Zamonaviy texnologiyalar bilan jihozlangan aqlli recuperator - energiya tejamkor va samarali ventilyatsiya yechimi.",
+      "stats": {
+        "efficiency": "82% gacha issiqlik qaytarish",
+        "filtration": "99% havo tozalash",
+        "noise": "22.6 dBA past shovqin"
+      },
+      "cta": "Bepul maslahat olish",
+      "ctaSecondary": "Batafsil ma'lumot"
+    },
+    "purifier": {
+      "hero": {
+        "badge": "Premium havo tozalash tizimi",
+        "title": "Welkin Air",
+        "subtitle": "Anionli Havo Tozalagich",
+        "description": "7 bosqichli filtrlash tizimi, UV sterilizatsiya va anion generatori bilan jihozlangan zamonaviy havo tozalagich. Xonangizda doimo toza va sog'lom havo.",
+        "stats": {
+          "filtration": "99% tozalash",
+          "cadr": "Yuqori CADR",
+          "humidity": "Namlashtirish"
+        },
+        "cta": "Buyurtma berish",
+        "purification": "tozalash"
+      },
+      "filtration": {
+        "badge": "Ko'p bosqichli filtrlash",
+        "title": "7 bosqichli filtrlash tizimi",
+        "subtitle": "Har bir nafasingiz toza va sog'lom bo'lishi uchun eng ilg'or filtrlash texnologiyalari birlashtirilgan",
+        "layers": "qatlam filtrlash",
+        "filters": [
+          {
+            "title": "Oldindan filtrlash",
+            "description": "Alyuminiy qotishmasidan yasalgan filtr 5 mikrondan katta chang zarrachalarini, soch, tuk va boshqa katta ifloslovchilarni tutib qoladi."
+          },
+          {
+            "title": "Sovuq katalizator filtr",
+            "description": "Formaldegid, benzol, ksilol, TVOC va boshqa zararli gazlarni parchalaydi. 5 yildan ortiq ishlaydi."
+          },
+          {
+            "title": "Aktivlangan ko'mir filtr",
+            "description": "Hid va gazlarni so'rib oluvchi yuqori samarali cho'g'li ko'mir filtri."
+          },
+          {
+            "title": "Antibakterial filtr",
+            "description": "99% dan ortiq bakteriyalarni yo'q qiluvchi antibakterial reagent bilan to'ldirilgan."
+          },
+          {
+            "title": "HEPA H13 filtr",
+            "description": "0.3 mikronli zarrachalarni 99% samaradorlik bilan filtrlaydi. Viruslar va bakteriyalarni tutib qoladi."
+          },
+          {
+            "title": "UV sterilizatsiya",
+            "description": "365nm ultrabinafsha nurlar orqali bakteriyalarni o'ldiradi va havoni dezinfeksiya qiladi."
+          },
+          {
+            "title": "Anion generatori",
+            "description": "Manfiy ionlar chiqarib havoni yanada tozalaydi va tabiiy o'rmon havosiga o'xshatadi."
+          }
+        ],
+        "stat1": "Chang tozalash",
+        "stat2": "Eng kichik zarracha",
+        "stat3": "Filtrlash",
+        "stat4": "Filtr sinfi"
+      },
+      "features": {
+        "badge": "Aqlli funksiyalar",
+        "title": "Smart boshqaruv va qulayliklar",
+        "subtitle": "Smart Life ilovasi orqali boshqarish va ko'plab qulay funksiyalar",
+        "items": [
+          {
+            "title": "Taymer funksiyasi",
+            "description": "1 dan 12 soatgacha taymer o'rnatish imkoniyati."
+          },
+          {
+            "title": "Filtr almashtirish signali",
+            "description": "320 va 1500 soat ishlagandan so'ng filtrni tozalash yoki almashtirish haqida ogohlantirish."
+          },
+          {
+            "title": "Smart Life ilovasi",
+            "description": "Android va iOS uchun Smart Life ilovasi orqali masofadan boshqarish."
+          },
+          {
+            "title": "Wi-Fi ulanish",
+            "description": "2.4GHz Wi-Fi tarmog'iga ulanib, smartfon orqali boshqarish."
+          },
+          {
+            "title": "Uyqu rejimi",
+            "description": "Barcha indikatorlar o'chadi va eng past tezlikda ishlaydi."
+          },
+          {
+            "title": "Bolalar qulfi",
+            "description": "Barcha tugmalarni qulflab, bolalardan himoya qilish."
+          },
+          {
+            "title": "Anion rejimi",
+            "description": "Manfiy ionlar ishlab chiqarish rejimini yoqish/o'chirish."
+          },
+          {
+            "title": "UV sterilizatsiya rejimi",
+            "description": "Ultrabinafsha sterilizatsiya rejimini alohida boshqarish."
+          }
+        ],
+        "appInfo": "Qo'llab-quvvatlanadigan platformalar"
+      },
+      "specs": {
+        "title": "Texnik xususiyatlar",
+        "subtitle": "Havo tozalagich haqida batafsil ma'lumot",
+        "items": [
+          { "label": "Filtrlash samaradorligi", "value": "99% (PM2.5)" },
+          { "label": "Filtr turi", "value": "HEPA H13 + Ko'mir" },
+          { "label": "UV sterilizatsiya", "value": "365nm UVC" },
+          { "label": "Anion generatori", "value": "Ha" },
+          { "label": "Tezlik rejimlari", "value": "Bir nechta" },
+          { "label": "Shovqin darajasi", "value": "Past" },
+          { "label": "Taymer", "value": "1-12 soat" },
+          { "label": "Wi-Fi", "value": "2.4GHz" },
+          { "label": "Ilova", "value": "Smart Life" },
+          { "label": "Namlashtirish", "value": "Ha" }
+        ]
+      }
+    },
+    "atmosphere": {
+      "title": "Xonadoningizda sog'lom atmosfera yaratamiz",
+      "description": "Statistikaga ko'ra, odamlar o'z hayotining 90% dan ortig'ini yopiq xonalarda - uyda, ofisda yoki boshqa binolarda o'tkazishadi. Shuning uchun nafas oladigan havoning sifati sizning sog'lig'ingiz va farovonligingiz uchun hal qiluvchi ahamiyatga ega.",
+      "points": [
+        "Ichki havo tashqi havodan 5 baravar iflosroq bo'lishi mumkin",
+        "Yomon ventilyatsiya allergiya va nafas olish muammolariga olib keladi",
+        "Toza havo uyqu sifati va konsentratsiyani yaxshilaydi"
+      ],
+      "conclusion": "Welkin Air - bu sizning oilangiz salomatligi uchun eng yaxshi sarmoya."
+    },
+    "benefits": {
+      "title": "Recuperator afzalliklari",
+      "subtitle": "Nima uchun Welkin Air tanlash kerak?",
+      "items": [
+        {
+          "title": "Ko'p darajali filtrlash",
+          "description": "Havoni 99% gacha tozalaydi. HEPA (H10) filtri, aktivlangan ko'mir va birlamchi filtr."
+        },
+        {
+          "title": "Universal qo'llash",
+          "description": "Ichki va tashqi xonalar, ofislar, maktablar va tibbiyot muassasalari uchun mos."
+        },
+        {
+          "title": "Energiya tejash",
+          "description": "Yuqori sifatli energiya tejamli isitish funksiyasi. 82% gacha issiqlik qaytarish."
+        },
+        {
+          "title": "Minimal bosim",
+          "description": "Devor uchun muammo keltirmaydigan yoki deyarli sezilmaydigan bosim."
+        },
+        {
+          "title": "DC ventilyator",
+          "description": "Yuqori sifatli va samarali brushless DC ventilyatori, 8 ta tezlik rejimi."
+        },
+        {
+          "title": "Smart boshqaruv",
+          "description": "Smartfon orqali masofadan boshqarish (Android / iOS). Qulay pult."
+        },
+        {
+          "title": "Havo monitoringi",
+          "description": "Kislorod, namlik, harorat va CO₂ ko'rsatkichlarini real vaqtda kuzatish."
+        },
+        {
+          "title": "Oson o'rnatish",
+          "description": "Kompakt dizayn va ikki xil o'rnatish varianti. Tez va oson montaj."
+        }
+      ]
+    },
+    "design": {
+      "badge": "Premium Dizayn",
+      "title": "Zamonaviy va nafis dizayn",
+      "subtitle": "Welkin Air nafaqat samarali ishlaydi, balki har qanday interyer bilan uyg'unlashadi",
+      "features": [
+        {
+          "title": "Minimalist estetika",
+          "description": "Zamonaviy, sodda va oqlangan chiziqlar bilan yaratilgan dizayn har qanday xona uslubiga mos keladi."
+        },
+        {
+          "title": "Uy uchun ideal",
+          "description": "Yotoqxona, mehmonxona yoki bolalar xonasida go'zal ko'rinish beradi. Oilangiz uchun mukammal tanlov."
+        },
+        {
+          "title": "Ofis uchun professional",
+          "description": "Biznes muhitga mos keladigan professional ko'rinish. Ofis, klinika va do'konlar uchun ideal."
+        },
+        {
+          "title": "Yupqa va kompakt",
+          "description": "Faqat 165mm qalinlik. Devorga o'rnatilganda minimal joy egallaydi."
+        },
+        {
+          "title": "Premium materiallar",
+          "description": "Yuqori sifatli plastik va metall qismlar. Uzoq muddat xizmat qiladi."
+        },
+        {
+          "title": "Oq va zamonaviy",
+          "description": "Klassik oq rang har qanday devor rangiga mos keladi va xonaga zamonaviy ko'rinish beradi."
+        }
+      ],
+      "quote": "Nafaqat sof havo, balki chiroyli interyer elementi"
+    },
+    "smart": {
+      "badge": "Aqlli texnologiyalar",
+      "title": "AI va Smart funksiyalar",
+      "subtitle": "Sun'iy intellekt va zamonaviy texnologiyalar bilan jihozlangan recuperator",
+      "features": [
+        {
+          "title": "Vaqtli boshqaruv",
+          "description": "Kundalik jadval bo'yicha avtomatik yoqilish va o'chish. Uyqu va ish vaqtiga moslashtiring."
+        },
+        {
+          "title": "Filtr almashtirish signali",
+          "description": "Filtr ifloslanganida avtomatik ogohlantirish. Har doim toza havo kafolatlanadi."
+        },
+        {
+          "title": "Ovozli boshqaruv",
+          "description": "Google Assistant, Alexa va Siri bilan ishlaydi. Ovoz buyruqlari bilan boshqaring."
+        },
+        {
+          "title": "Mobil ilova",
+          "description": "Android va iOS uchun maxsus ilova. Istalgan joydan masofadan boshqarish."
+        },
+        {
+          "title": "Wi-Fi ulanish",
+          "description": "Uy Wi-Fi tarmog'iga ulanib, smart home tizimiga qo'shiladi."
+        },
+        {
+          "title": "Avtomatik rejim",
+          "description": "Havo sifatiga qarab avtomatik tezlik sozlash. CO₂ oshganda tezroq ishlaydi."
+        },
+        {
+          "title": "Xavfsizlik tizimi",
+          "description": "Bolalar qulfi va ortiqcha isitishdan himoya. Oilangiz xavfsizligi uchun."
+        },
+        {
+          "title": "Energiya monitoring",
+          "description": "Kunlik, haftalik va oylik energiya sarfini kuzatish. Tejamkorlikni nazorat qiling."
+        }
+      ],
+      "integrations": "Qo'llab-quvvatlanadigan platformalar",
+      "platforms": ["Google Home", "Amazon Alexa", "Apple HomeKit", "SmartThings", "IFTTT"]
+    },
+    "specs": {
+      "title": "Texnik xususiyatlar",
+      "subtitle": "Welkin Air recuperatori haqida batafsil",
+      "items": [
+        { "label": "Xona maydoni", "value": "15-50 m²" },
+        { "label": "Issiqlik qaytarish", "value": "82% gacha" },
+        { "label": "Motor turi", "value": "Brushless DC" },
+        { "label": "Tezlik rejimlari", "value": "8 ta" },
+        { "label": "Shovqin darajasi", "value": "22.6-37.9 dBA" },
+        { "label": "Havo monitoringi", "value": "Namlik + Harorat + CO₂" },
+        { "label": "Filtrlash", "value": "HEPA H10 + Aktivlangan ko'mir" },
+        { "label": "PM2.5 tozalash", "value": "99% gacha" },
+        { "label": "O'lchamlari", "value": "Yupqa va kompakt" },
+        { "label": "Boshqaruv", "value": "Smartfon + Ovoz" }
+      ]
+    },
+    "contact": {
+      "title": "Bepul maslahat olish",
+      "subtitle": "Ma'lumotlaringizni qoldiring, mutaxassislarimiz siz bilan bog'lanishadi",
+      "form": {
+        "name": "Ismingiz",
+        "namePlaceholder": "Ismingizni kiriting",
+        "phone": "Telefon raqamingiz",
+        "phonePlaceholder": "+998 90 123 45 67",
+        "submit": "Yuborish",
+        "success": "Muvaffaqiyatli yuborildi!",
+        "successMessage": "Tez orada siz bilan bog'lanamiz."
+      }
+    },
+    "footer": {
+      "description": "Welkin Air - zamonaviy ventilyatsiya yechimlari. Sog'lom havo, sog'lom hayot.",
+      "rights": "Barcha huquqlar himoyalangan"
+    }
+  },
+  "ru": {
+    "nav": {
+      "home": "Главная",
+      "features": "Преимущества",
+      "design": "Дизайн",
+      "smart": "Smart",
+      "specs": "Характеристики",
+      "contact": "Контакты"
+    },
+    "products": {
+      "selectTitle": "Выберите продукт",
+      "recuperator": {
+        "name": "Умный Рекуператор",
+        "short": "Система вентиляции"
+      },
+      "purifier": {
+        "name": "Очиститель Воздуха",
+        "short": "Система очистки воздуха"
+      }
+    },
+    "hero": {
+      "badge": "Система вентиляции нового поколения",
+      "title": "Welkin Air",
+      "subtitle": "Умный рекуператор",
+      "description": "Принесите чистый и здоровый воздух в ваш дом. Умный рекуператор с современными технологиями — энергоэффективное и действенное вентиляционное решение.",
+      "stats": {
+        "efficiency": "До 82% рекуперации тепла",
+        "filtration": "99% очистка воздуха",
+        "noise": "22.6 дБА тихая работа"
+      },
+      "cta": "Получить консультацию",
+      "ctaSecondary": "Подробнее"
+    },
+    "purifier": {
+      "hero": {
+        "badge": "Премиум система очистки воздуха",
+        "title": "Welkin Air",
+        "subtitle": "Анионный очиститель воздуха",
+        "description": "Современный очиститель воздуха с 7-ступенчатой системой фильтрации, УФ-стерилизацией и анионным генератором. Всегда чистый и здоровый воздух в вашем помещении.",
+        "stats": {
+          "filtration": "99% очистка",
+          "cadr": "Высокий CADR",
+          "humidity": "Увлажнение"
+        },
+        "cta": "Заказать",
+        "purification": "очистка"
+      },
+      "filtration": {
+        "badge": "Многоступенчатая фильтрация",
+        "title": "7-ступенчатая система фильтрации",
+        "subtitle": "Самые передовые технологии фильтрации объединены для того, чтобы каждый ваш вдох был чистым и здоровым",
+        "layers": "слоёв фильтрации",
+        "filters": [
+          {
+            "title": "Предварительный фильтр",
+            "description": "Фильтр из алюминиевого сплава улавливает частицы пыли крупнее 5 микрон, волосы, шерсть и другие крупные загрязнители."
+          },
+          {
+            "title": "Фильтр холодного катализатора",
+            "description": "Разлагает формальдегид, бензол, ксилол, TVOC и другие вредные газы. Срок службы более 5 лет."
+          },
+          {
+            "title": "Фильтр с активированным углем",
+            "description": "Высокоэффективный сотовый угольный фильтр, поглощающий запахи и газы."
+          },
+          {
+            "title": "Антибактериальный фильтр",
+            "description": "Наполнен антибактериальным реагентом, уничтожающим более 99% бактерий."
+          },
+          {
+            "title": "HEPA H13 фильтр",
+            "description": "Фильтрует частицы размером 0,3 микрона с эффективностью 99%. Улавливает вирусы и бактерии."
+          },
+          {
+            "title": "УФ-стерилизация",
+            "description": "Уничтожает бактерии и дезинфицирует воздух с помощью ультрафиолетовых лучей 365 нм."
+          },
+          {
+            "title": "Анионный генератор",
+            "description": "Выделяет отрицательные ионы для дополнительной очистки воздуха, создавая атмосферу как в лесу."
+          }
+        ],
+        "stat1": "Очистка пыли",
+        "stat2": "Мельчайшая частица",
+        "stat3": "Фильтрация",
+        "stat4": "Класс фильтра"
+      },
+      "features": {
+        "badge": "Умные функции",
+        "title": "Умное управление и удобства",
+        "subtitle": "Управление через приложение Smart Life и множество удобных функций",
+        "items": [
+          {
+            "title": "Функция таймера",
+            "description": "Возможность установки таймера от 1 до 12 часов."
+          },
+          {
+            "title": "Сигнал замены фильтра",
+            "description": "Уведомление о необходимости очистки или замены фильтра через 320 и 1500 часов работы."
+          },
+          {
+            "title": "Приложение Smart Life",
+            "description": "Дистанционное управление через приложение Smart Life для Android и iOS."
+          },
+          {
+            "title": "Wi-Fi подключение",
+            "description": "Подключение к сети Wi-Fi 2.4GHz для управления со смартфона."
+          },
+          {
+            "title": "Спящий режим",
+            "description": "Все индикаторы выключаются, работа на минимальной скорости."
+          },
+          {
+            "title": "Детский замок",
+            "description": "Блокировка всех кнопок для защиты от детей."
+          },
+          {
+            "title": "Режим анионов",
+            "description": "Включение/выключение режима генерации отрицательных ионов."
+          },
+          {
+            "title": "Режим УФ-стерилизации",
+            "description": "Отдельное управление режимом ультрафиолетовой стерилизации."
+          }
+        ],
+        "appInfo": "Поддерживаемые платформы"
+      },
+      "specs": {
+        "title": "Технические характеристики",
+        "subtitle": "Подробная информация об очистителе воздуха",
+        "items": [
+          { "label": "Эффективность фильтрации", "value": "99% (PM2.5)" },
+          { "label": "Тип фильтра", "value": "HEPA H13 + Уголь" },
+          { "label": "УФ-стерилизация", "value": "365nm UVC" },
+          { "label": "Анионный генератор", "value": "Да" },
+          { "label": "Режимы скорости", "value": "Несколько" },
+          { "label": "Уровень шума", "value": "Низкий" },
+          { "label": "Таймер", "value": "1-12 часов" },
+          { "label": "Wi-Fi", "value": "2.4GHz" },
+          { "label": "Приложение", "value": "Smart Life" },
+          { "label": "Увлажнение", "value": "Да" }
+        ]
+      }
+    },
+    "atmosphere": {
+      "title": "Создаём здоровую атмосферу в вашем доме",
+      "description": "По статистике, люди проводят более 90% своей жизни в закрытых помещениях — дома, в офисе или других зданиях. Поэтому качество воздуха, которым вы дышите, имеет решающее значение для вашего здоровья и благополучия.",
+      "points": [
+        "Воздух в помещении может быть в 5 раз грязнее наружного",
+        "Плохая вентиляция вызывает аллергию и проблемы с дыханием",
+        "Чистый воздух улучшает качество сна и концентрацию"
+      ],
+      "conclusion": "Welkin Air — лучшая инвестиция в здоровье вашей семьи."
+    },
+    "benefits": {
+      "title": "Преимущества рекуператора",
+      "subtitle": "Почему стоит выбрать Welkin Air?",
+      "items": [
+        {
+          "title": "Многоступенчатая фильтрация",
+          "description": "Очистка воздуха до 99%. HEPA (H10) фильтр, активированный уголь и первичный фильтр."
+        },
+        {
+          "title": "Универсальное применение",
+          "description": "Подходит для жилых и офисных помещений, школ и медицинских учреждений."
+        },
+        {
+          "title": "Экономия энергии",
+          "description": "Высококачественная энергосберегающая функция обогрева. До 82% рекуперации тепла."
+        },
+        {
+          "title": "Минимальное давление",
+          "description": "Лёгкое избыточное давление, не создающее проблем для стен."
+        },
+        {
+          "title": "DC вентилятор",
+          "description": "Высококачественный и эффективный бесщёточный DC вентилятор, 8 скоростей."
+        },
+        {
+          "title": "Умное управление",
+          "description": "Дистанционное управление со смартфона (Android / iOS). Удобный пульт."
+        },
+        {
+          "title": "Мониторинг воздуха",
+          "description": "Отслеживание показателей кислорода, влажности, температуры и CO₂ в реальном времени."
+        },
+        {
+          "title": "Простая установка",
+          "description": "Компактный дизайн и два варианта установки. Быстрый и простой монтаж."
+        }
+      ]
+    },
+    "design": {
+      "badge": "Премиум дизайн",
+      "title": "Современный и изящный дизайн",
+      "subtitle": "Welkin Air не только эффективно работает, но и гармонично вписывается в любой интерьер",
+      "features": [
+        {
+          "title": "Минималистичная эстетика",
+          "description": "Современный, простой дизайн с утончёнными линиями подходит к любому стилю помещения."
+        },
+        {
+          "title": "Идеален для дома",
+          "description": "Отлично смотрится в спальне, гостиной или детской комнате. Идеальный выбор для семьи."
+        },
+        {
+          "title": "Профессионален для офиса",
+          "description": "Профессиональный внешний вид для бизнес-среды. Идеален для офисов, клиник и магазинов."
+        },
+        {
+          "title": "Тонкий и компактный",
+          "description": "Толщина всего 165 мм. Занимает минимум места при настенной установке."
+        },
+        {
+          "title": "Премиум материалы",
+          "description": "Высококачественный пластик и металлические детали. Долговечная конструкция."
+        },
+        {
+          "title": "Белый и современный",
+          "description": "Классический белый цвет подходит к любому цвету стен и придаёт комнате современный вид."
+        }
+      ],
+      "quote": "Не только чистый воздух, но и красивый элемент интерьера"
+    },
+    "smart": {
+      "badge": "Умные технологии",
+      "title": "AI и Smart функции",
+      "subtitle": "Рекуператор с искусственным интеллектом и современными технологиями",
+      "features": [
+        {
+          "title": "Управление по расписанию",
+          "description": "Автоматическое включение и выключение по дневному графику. Настройте под режим сна и работы."
+        },
+        {
+          "title": "Сигнал замены фильтра",
+          "description": "Автоматическое уведомление при загрязнении фильтра. Всегда гарантирован чистый воздух."
+        },
+        {
+          "title": "Голосовое управление",
+          "description": "Работает с Google Assistant, Alexa и Siri. Управляйте голосовыми командами."
+        },
+        {
+          "title": "Мобильное приложение",
+          "description": "Специальное приложение для Android и iOS. Дистанционное управление из любого места."
+        },
+        {
+          "title": "Wi-Fi подключение",
+          "description": "Подключается к домашней Wi-Fi сети и интегрируется в систему умного дома."
+        },
+        {
+          "title": "Автоматический режим",
+          "description": "Автоматическая регулировка скорости по качеству воздуха. Работает быстрее при повышении CO₂."
+        },
+        {
+          "title": "Система безопасности",
+          "description": "Детский замок и защита от перегрева. Для безопасности вашей семьи."
+        },
+        {
+          "title": "Мониторинг энергии",
+          "description": "Отслеживание ежедневного, еженедельного и ежемесячного потребления энергии."
+        }
+      ],
+      "integrations": "Поддерживаемые платформы",
+      "platforms": ["Google Home", "Amazon Alexa", "Apple HomeKit", "SmartThings", "IFTTT"]
+    },
+    "specs": {
+      "title": "Технические характеристики",
+      "subtitle": "Подробно о рекуператоре Welkin Air",
+      "items": [
+        { "label": "Площадь помещения", "value": "15-50 м²" },
+        { "label": "Рекуперация тепла", "value": "До 82%" },
+        { "label": "Тип мотора", "value": "Бесщёточный DC" },
+        { "label": "Режимы скорости", "value": "8 шт" },
+        { "label": "Уровень шума", "value": "22.6-37.9 дБА" },
+        { "label": "Мониторинг воздуха", "value": "Влажность + Температура + CO₂" },
+        { "label": "Фильтрация", "value": "HEPA H10 + Активированный уголь" },
+        { "label": "Очистка PM2.5", "value": "До 99%" },
+        { "label": "Размеры", "value": "Тонкий и компактный" },
+        { "label": "Управление", "value": "Смартфон + Голос" }
+      ]
+    },
+    "contact": {
+      "title": "Получить бесплатную консультацию",
+      "subtitle": "Оставьте свои данные, наши специалисты свяжутся с вами",
+      "form": {
+        "name": "Ваше имя",
+        "namePlaceholder": "Введите ваше имя",
+        "phone": "Номер телефона",
+        "phonePlaceholder": "+998 90 123 45 67",
+        "submit": "Отправить",
+        "success": "Успешно отправлено!",
+        "successMessage": "Мы скоро свяжемся с вами."
+      }
+    },
+    "footer": {
+      "description": "Welkin Air — современные вентиляционные решения. Здоровый воздух, здоровая жизнь.",
+      "rights": "Все права защищены"
+    }
+  },
+  "en": {
+    "nav": {
+      "home": "Home",
+      "features": "Features",
+      "design": "Design",
+      "smart": "Smart",
+      "specs": "Specifications",
+      "contact": "Contact"
+    },
+    "products": {
+      "selectTitle": "Select Product",
+      "recuperator": {
+        "name": "Smart Recuperator",
+        "short": "Ventilation system"
+      },
+      "purifier": {
+        "name": "Air Purifier",
+        "short": "Air purification system"
+      }
+    },
+    "hero": {
+      "badge": "Next Generation Ventilation System",
+      "title": "Welkin Air",
+      "subtitle": "Smart Recuperator",
+      "description": "Bring clean and healthy air to your home. A smart recuperator equipped with modern technologies — an energy-efficient and effective ventilation solution.",
+      "stats": {
+        "efficiency": "Up to 82% heat recovery",
+        "filtration": "99% air purification",
+        "noise": "22.6 dBA quiet operation"
+      },
+      "cta": "Get Free Consultation",
+      "ctaSecondary": "Learn More"
+    },
+    "purifier": {
+      "hero": {
+        "badge": "Premium air purification system",
+        "title": "Welkin Air",
+        "subtitle": "Anionic Air Purifier",
+        "description": "Modern air purifier with 7-stage filtration system, UV sterilization and anion generator. Always clean and healthy air in your space.",
+        "stats": {
+          "filtration": "99% purification",
+          "cadr": "High CADR",
+          "humidity": "Humidification"
+        },
+        "cta": "Order Now",
+        "purification": "purification"
+      },
+      "filtration": {
+        "badge": "Multi-stage filtration",
+        "title": "7-Stage Filtration System",
+        "subtitle": "The most advanced filtration technologies combined to ensure every breath you take is clean and healthy",
+        "layers": "filtration layers",
+        "filters": [
+          {
+            "title": "Pre-filter",
+            "description": "Aluminum alloy filter captures dust particles larger than 5 microns, hair, pet dander and other large pollutants."
+          },
+          {
+            "title": "Cold Catalyst Filter",
+            "description": "Decomposes formaldehyde, benzene, xylene, TVOC and other harmful gases. Lifespan over 5 years."
+          },
+          {
+            "title": "Activated Carbon Filter",
+            "description": "High-efficiency honeycomb carbon filter that absorbs odors and gases."
+          },
+          {
+            "title": "Antibacterial Filter",
+            "description": "Filled with antibacterial reagent that eliminates over 99% of bacteria."
+          },
+          {
+            "title": "HEPA H13 Filter",
+            "description": "Filters particles as small as 0.3 microns with 99% efficiency. Captures viruses and bacteria."
+          },
+          {
+            "title": "UV Sterilization",
+            "description": "Kills bacteria and disinfects air using 365nm ultraviolet rays."
+          },
+          {
+            "title": "Anion Generator",
+            "description": "Releases negative ions for additional air purification, creating a forest-like atmosphere."
+          }
+        ],
+        "stat1": "Dust removal",
+        "stat2": "Smallest particle",
+        "stat3": "Filtration",
+        "stat4": "Filter class"
+      },
+      "features": {
+        "badge": "Smart Features",
+        "title": "Smart Control and Conveniences",
+        "subtitle": "Control via Smart Life app and numerous convenient functions",
+        "items": [
+          {
+            "title": "Timer Function",
+            "description": "Set timer from 1 to 12 hours."
+          },
+          {
+            "title": "Filter Replacement Alert",
+            "description": "Notification to clean or replace filter after 320 and 1500 hours of operation."
+          },
+          {
+            "title": "Smart Life App",
+            "description": "Remote control via Smart Life app for Android and iOS."
+          },
+          {
+            "title": "Wi-Fi Connection",
+            "description": "Connect to 2.4GHz Wi-Fi network for smartphone control."
+          },
+          {
+            "title": "Sleep Mode",
+            "description": "All indicators turn off, operates at minimum speed."
+          },
+          {
+            "title": "Child Lock",
+            "description": "Lock all buttons for child protection."
+          },
+          {
+            "title": "Anion Mode",
+            "description": "Enable/disable negative ion generation mode."
+          },
+          {
+            "title": "UV Sterilization Mode",
+            "description": "Separate control of ultraviolet sterilization mode."
+          }
+        ],
+        "appInfo": "Supported Platforms"
+      },
+      "specs": {
+        "title": "Technical Specifications",
+        "subtitle": "Detailed information about the air purifier",
+        "items": [
+          { "label": "Filtration Efficiency", "value": "99% (PM2.5)" },
+          { "label": "Filter Type", "value": "HEPA H13 + Carbon" },
+          { "label": "UV Sterilization", "value": "365nm UVC" },
+          { "label": "Anion Generator", "value": "Yes" },
+          { "label": "Speed Modes", "value": "Multiple" },
+          { "label": "Noise Level", "value": "Low" },
+          { "label": "Timer", "value": "1-12 hours" },
+          { "label": "Wi-Fi", "value": "2.4GHz" },
+          { "label": "App", "value": "Smart Life" },
+          { "label": "Humidification", "value": "Yes" }
+        ]
+      }
+    },
+    "atmosphere": {
+      "title": "Creating a Healthy Atmosphere in Your Home",
+      "description": "According to statistics, people spend more than 90% of their lives indoors — at home, in the office, or other buildings. Therefore, the quality of the air you breathe is crucial for your health and well-being.",
+      "points": [
+        "Indoor air can be 5 times more polluted than outdoor air",
+        "Poor ventilation causes allergies and respiratory problems",
+        "Clean air improves sleep quality and concentration"
+      ],
+      "conclusion": "Welkin Air is the best investment in your family's health."
+    },
+    "benefits": {
+      "title": "Recuperator Benefits",
+      "subtitle": "Why Choose Welkin Air?",
+      "items": [
+        {
+          "title": "Multi-Stage Filtration",
+          "description": "Air purification up to 99%. HEPA (H10) filter, activated carbon, and primary filter."
+        },
+        {
+          "title": "Universal Application",
+          "description": "Suitable for residential and office spaces, schools, and medical facilities."
+        },
+        {
+          "title": "Energy Saving",
+          "description": "High-quality energy-efficient heating function. Up to 82% heat recovery."
+        },
+        {
+          "title": "Minimal Pressure",
+          "description": "Light overpressure that doesn't cause problems for walls."
+        },
+        {
+          "title": "DC Fan",
+          "description": "High-quality and efficient brushless DC fan with 8 speed modes."
+        },
+        {
+          "title": "Smart Control",
+          "description": "Remote control via smartphone (Android / iOS). Convenient remote."
+        },
+        {
+          "title": "Air Monitoring",
+          "description": "Real-time tracking of oxygen, humidity, temperature, and CO₂ levels."
+        },
+        {
+          "title": "Easy Installation",
+          "description": "Compact design with two installation options. Quick and easy mounting."
+        }
+      ]
+    },
+    "design": {
+      "badge": "Premium Design",
+      "title": "Modern and Elegant Design",
+      "subtitle": "Welkin Air not only works efficiently but also harmonizes with any interior",
+      "features": [
+        {
+          "title": "Minimalist Aesthetics",
+          "description": "Modern, simple design with refined lines fits any room style."
+        },
+        {
+          "title": "Ideal for Home",
+          "description": "Looks beautiful in bedroom, living room, or children's room. Perfect choice for your family."
+        },
+        {
+          "title": "Professional for Office",
+          "description": "Professional appearance for business environments. Ideal for offices, clinics, and stores."
+        },
+        {
+          "title": "Thin and Compact",
+          "description": "Only 165mm thickness. Takes up minimal space when wall-mounted."
+        },
+        {
+          "title": "Premium Materials",
+          "description": "High-quality plastic and metal components. Long-lasting construction."
+        },
+        {
+          "title": "White and Modern",
+          "description": "Classic white color matches any wall color and gives the room a modern look."
+        }
+      ],
+      "quote": "Not just clean air, but a beautiful interior element"
+    },
+    "smart": {
+      "badge": "Smart Technologies",
+      "title": "AI and Smart Features",
+      "subtitle": "Recuperator equipped with artificial intelligence and modern technologies",
+      "features": [
+        {
+          "title": "Scheduled Control",
+          "description": "Automatic on/off by daily schedule. Customize for sleep and work hours."
+        },
+        {
+          "title": "Filter Replacement Alert",
+          "description": "Automatic notification when filter is dirty. Clean air always guaranteed."
+        },
+        {
+          "title": "Voice Control",
+          "description": "Works with Google Assistant, Alexa, and Siri. Control with voice commands."
+        },
+        {
+          "title": "Mobile App",
+          "description": "Dedicated app for Android and iOS. Remote control from anywhere."
+        },
+        {
+          "title": "Wi-Fi Connection",
+          "description": "Connects to home Wi-Fi network and integrates into smart home system."
+        },
+        {
+          "title": "Auto Mode",
+          "description": "Automatic speed adjustment based on air quality. Works faster when CO₂ rises."
+        },
+        {
+          "title": "Safety System",
+          "description": "Child lock and overheat protection. For your family's safety."
+        },
+        {
+          "title": "Energy Monitoring",
+          "description": "Track daily, weekly, and monthly energy consumption. Monitor savings."
+        }
+      ],
+      "integrations": "Supported Platforms",
+      "platforms": ["Google Home", "Amazon Alexa", "Apple HomeKit", "SmartThings", "IFTTT"]
+    },
+    "specs": {
+      "title": "Technical Specifications",
+      "subtitle": "Detailed information about Welkin Air recuperator",
+      "items": [
+        { "label": "Room Area", "value": "15-50 m²" },
+        { "label": "Heat Recovery", "value": "Up to 82%" },
+        { "label": "Motor Type", "value": "Brushless DC" },
+        { "label": "Speed Modes", "value": "8 levels" },
+        { "label": "Noise Level", "value": "22.6-37.9 dBA" },
+        { "label": "Air Monitoring", "value": "Humidity + Temperature + CO₂" },
+        { "label": "Filtration", "value": "HEPA H10 + Activated Carbon" },
+        { "label": "PM2.5 Purification", "value": "Up to 99%" },
+        { "label": "Dimensions", "value": "Thin and compact" },
+        { "label": "Control", "value": "Smartphone + Voice" }
+      ]
+    },
+    "contact": {
+      "title": "Get Free Consultation",
+      "subtitle": "Leave your details, our specialists will contact you",
+      "form": {
+        "name": "Your Name",
+        "namePlaceholder": "Enter your name",
+        "phone": "Phone Number",
+        "phonePlaceholder": "+998 90 123 45 67",
+        "submit": "Submit",
+        "success": "Successfully sent!",
+        "successMessage": "We will contact you soon."
+      }
+    },
+    "footer": {
+      "description": "Welkin Air — modern ventilation solutions. Healthy air, healthy life.",
+      "rights": "All rights reserved"
+    }
+  }
+}
