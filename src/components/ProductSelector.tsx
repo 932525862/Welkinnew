@@ -1,82 +1,112 @@
-import { motion } from 'framer-motion';
-import { Wind, Sparkles } from 'lucide-react';
-import { useProduct } from '@/contexts/ProductContext';
-import { useLanguage } from '@/contexts/LanguageContext';
+import { motion } from "framer-motion";
+import { ArrowRight, Sparkles, Gauge, Volume2, Wind } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { useProduct } from "@/contexts/ProductContext";
+import { Button } from "@/components/ui/button";
+import heroBg from "@/assets/bgimg.png";
+import Havo from "@/assets/icon.png";
 
 export const ProductSelector = () => {
-  const { activeProduct, setActiveProduct } = useProduct();
   const { t } = useLanguage();
+  const { activeProduct, setActiveProduct, statsRef } = useProduct(); // statsRef qo‘shildi
+
+  const stats = [
+    { icon: Gauge, value: t("hero.stats.efficiency") },
+    { icon: Sparkles, value: t("hero.stats.filtration") },
+    { icon: Volume2, value: t("hero.stats.noise") },
+  ];
+
+  // Button bosilganda activeProduct o‘zgartirish va scroll qilish
+  const handleSelectProduct = (product: "recuperator" | "purifier") => {
+    setActiveProduct(product);
+
+    // Smooth scroll biroz kechikish bilan
+    setTimeout(() => {
+      statsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 100);
+  };
 
   return (
-    <section className="py-6 bg-gradient-to-b from-background to-secondary/10">
-      <div className="container-custom">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-6"
-        >
-          <h2 className="font-display text-xl md:text-2xl font-semibold text-foreground">
-            {t('products.selectTitle')}
-          </h2>
-        </motion.div>
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center overflow-hidden"
+    >
+      {/* Background */}
+      <div className="absolute inset-0">
+        <img src={heroBg} className="w-full h-full object-cover object-top" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 to-black/20" />
+      </div>
 
-        <div className="flex flex-col sm:flex-row justify-center gap-4 max-w-2xl mx-auto">
-          {/* Recuperator Card */}
-          <motion.button
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            onClick={() => setActiveProduct('recuperator')}
-            className={`flex-1 p-5 rounded-2xl border-2 transition-all duration-300 ${
-              activeProduct === 'recuperator'
-                ? 'bg-primary/10 border-primary shadow-lg shadow-primary/20'
-                : 'bg-card border-border hover:border-primary/50'
-            }`}
-          >
-            <div className="flex items-center gap-4">
-              <div className={`w-14 h-14 rounded-xl flex items-center justify-center ${
-                activeProduct === 'recuperator' ? 'bg-primary text-primary-foreground' : 'bg-secondary text-foreground'
-              }`}>
-                <Wind className="w-7 h-7" />
-              </div>
-              <div className="text-left">
-                <h3 className={`font-display font-semibold text-lg ${
-                  activeProduct === 'recuperator' ? 'text-primary' : 'text-foreground'
-                }`}>
-                  {t('products.recuperator.name')}
-                </h3>
-                <p className="text-sm text-muted-foreground">{t('products.recuperator.short')}</p>
-              </div>
-            </div>
-          </motion.button>
+      {/* Content */}
+      <div className="relative pl-20 pt-32 pb-20 max-lg:pl-10 max-md:pl-4">
+        <div className="max-w-3xl">
 
-          {/* Air Purifier Card */}
-          <motion.button
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            onClick={() => setActiveProduct('purifier')}
-            className={`flex-1 p-5 rounded-2xl border-2 transition-all duration-300 ${
-              activeProduct === 'purifier'
-                ? 'bg-accent/10 border-accent shadow-lg shadow-accent/20'
-                : 'bg-card border-border hover:border-accent/50'
-            }`}
+          {/* TITLE */}
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-6xl font-bold text-white mb-4"
           >
-            <div className="flex items-center gap-4">
-              <div className={`w-14 h-14 rounded-xl flex items-center justify-center ${
-                activeProduct === 'purifier' ? 'bg-accent text-accent-foreground' : 'bg-secondary text-foreground'
-              }`}>
-                <Sparkles className="w-7 h-7" />
+            {t("hero.title")}
+          </motion.h1>
+
+          <p className="text-white text-3xl mb-7">
+            {t("hero.title2")}
+          </p>
+
+          {/* BUTTONS */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="flex flex-col sm:flex-row gap-4 mb-8"
+          >
+            {/* Recuperator */}
+            <button
+              onClick={() => handleSelectProduct("recuperator")}
+              className={`w-full sm:w-auto px-8 py-4 text-lg rounded-2xl font-semibold border-2 transition-all
+                ${
+                  activeProduct === "recuperator"
+                    ? "bg-primary text-primary-foreground border-primary shadow-lg"
+                    : "bg-black/40 text-white border-white/20 hover:border-primary"
+                }`}
+            >
+              <div className="flex items-center justify-center gap-2">
+                <Wind className="w-6 h-6" />
+                {t("products.recuperator.name")}
               </div>
-              <div className="text-left">
-                <h3 className={`font-display font-semibold text-lg ${
-                  activeProduct === 'purifier' ? 'text-accent' : 'text-foreground'
-                }`}>
-                  {t('products.purifier.name')}
-                </h3>
-                <p className="text-sm text-muted-foreground">{t('products.purifier.short')}</p>
+            </button>
+
+            {/* Purifier */}
+            <button
+              onClick={() => handleSelectProduct("purifier")}
+              className={`w-full sm:w-auto px-8 py-4 text-lg rounded-2xl font-semibold border-2 transition-all
+                ${
+                  activeProduct === "purifier"
+                    ? "bg-primary text-primary-foreground border-primary shadow-lg"
+                    : "bg-black/40 text-white border-white/20 hover:border-primary"
+                }`}
+            >
+              <div className="flex items-center justify-center gap-2">
+                <img className="w-8 h-8" src={Havo} alt="walkin air" />
+                {t("products.purifier.name")}
               </div>
-            </div>
-          </motion.button>
+            </button>
+          </motion.div>
+
+          {/* Scroll qilinadigan STATS section */}
+          <div ref={statsRef} className="mt-20">
+            {stats.map((stat, index) => {
+              const Icon = stat.icon;
+              return (
+                <div key={index} className="flex items-center gap-3 text-white text-xl mb-4">
+                  <Icon className="w-6 h-6" />
+                  {stat.value}
+                </div>
+              );
+            })}
+          </div>
+
         </div>
       </div>
     </section>

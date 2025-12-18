@@ -22,6 +22,7 @@
     "hero": {
       "badge": "Yangi avlod ventilyatsiya tizimi",
       "title": "Welkin Air",
+      "title2": "Iltimos, ma’lumot olmoqchi bo‘lgan mahsulotingizni tanlang va tugmani bosing.",
       "subtitle": "Aqlli Recuperator",
       "description": "Uyingizga toza va sog'lom havo olib keling. Zamonaviy texnologiyalar bilan jihozlangan aqlli recuperator - energiya tejamkor va samarali ventilyatsiya yechimi.",
       "stats": {
@@ -321,6 +322,7 @@
     "hero": {
       "badge": "Система вентиляции нового поколения",
       "title": "Welkin Air",
+      "title2": "Пожалуйста, выберите продукт, о котором вы хотите получить информацию, и нажмите кнопку.",
       "subtitle": "Умный рекуператор",
       "description": "Принесите чистый и здоровый воздух в ваш дом. Умный рекуператор с современными технологиями — энергоэффективное и действенное вентиляционное решение.",
       "stats": {
@@ -620,6 +622,7 @@
     "hero": {
       "badge": "Next Generation Ventilation System",
       "title": "Welkin Air",
+      "title2": "Please select the product you would like to receive information about and click the button.",
       "subtitle": "Smart Recuperator",
       "description": "Bring clean and healthy air to your home. A smart recuperator equipped with modern technologies — an energy-efficient and effective ventilation solution.",
       "stats": {

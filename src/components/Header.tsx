@@ -55,12 +55,7 @@ export const Header = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <a href="#home" className="flex items-center gap-2 group">
-              <div className="w-10 h-10 rounded-xl bg-gradient-hero flex items-center justify-center">
-                <Wind className="w-6 h-6 text-primary-foreground" />
-              </div>
-              <span className="font-display font-bold text-xl text-foreground">
-                Welkin <span className="text-primary">Air</span>
-              </span>
+              <img className='w-30 h-10' src={Logo} alt="Welkin Air Logo" />
             </a>
 
             {/* Desktop Navigation */}
