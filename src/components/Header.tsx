@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Wind, ChevronDown, Globe } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useProduct } from '@/contexts/ProductContext';
-
+import Logo from '@/assets/welkinLogo.png';
 const languages = [
   { code: 'uz', label: "O'zbek", flag: '🇺🇿' },
   { code: 'ru', label: 'Русский', flag: '🇷🇺' },
