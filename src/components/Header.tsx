@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Wind, ChevronDown, Globe } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useProduct } from '@/contexts/ProductContext';
 
 const languages = [
   { code: 'uz', label: "O'zbek", flag: '🇺🇿' },
@@ -14,7 +15,7 @@ export const Header = () => {
   const [langDropdownOpen, setLangDropdownOpen] = useState(false);
   const { language, setLanguage, t } = useLanguage();
   const dropdownRef = useRef<HTMLDivElement>(null);
-
+  const {activeProduct} = useProduct()
   const currentLang = languages.find(l => l.code === language) || languages[0];
 
   useEffect(() => {
@@ -27,14 +28,20 @@ export const Header = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  const navItems = [
+  const navItems = activeProduct === "recuperator" ? [
     { href: '#home', label: t('nav.home') },
     { href: '#features', label: t('nav.features') },
     { href: '#design', label: t('nav.design') },
     { href: '#smart', label: t('nav.smart') },
     { href: '#specs', label: t('nav.specs') },
     { href: '#contact', label: t('nav.contact') },
-  ];
+  ] : [
+    { href: '#home', label: t('nav.home') },
+    { href: '#features', label: t('nav.features') },
+    { href: '#smart', label: t('nav.smart') },
+    { href: '#specs', label: t('nav.specs') },
+    { href: '#contact', label: t('nav.contact') },
+  ] 
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
@@ -58,15 +65,15 @@ export const Header = () => {
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-6">
-              {navItems.map((item) => (
-                <a
+              {navItems.map((item) => {
+                return <a
                   key={item.href}
                   href={item.href}
                   className="text-muted-foreground hover:text-primary transition-colors duration-300 font-medium text-sm"
                 >
                   {item.label}
                 </a>
-              ))}
+              })}
             </nav>
 
             {/* Language Dropdown & Mobile Menu */}

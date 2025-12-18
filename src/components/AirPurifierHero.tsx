@@ -14,7 +14,7 @@ export const AirPurifierHero = () => {
   ];
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-navy via-navy to-slate-900">
+    <section id='home' className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-navy via-navy to-slate-900">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-pulse-slow" />

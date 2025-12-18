@@ -30,7 +30,7 @@ export const Footer = () => {
               className="flex items-center gap-2 text-primary-foreground/70 hover:text-primary transition-colors"
             >
               <Phone className="w-4 h-4" />
-              <span>+998 90 123 45 67</span>
+              <span>+998 71 200 06 46</span>
             </a>
             <a 
               href="mailto:info@welkinair.uz" 
