@@ -3,9 +3,9 @@ import { ArrowRight, Sparkles, Gauge, Volume2, Wind } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useProduct } from "@/contexts/ProductContext";
 import { Button } from "@/components/ui/button";
-import heroBg from "@/assets/bgimg.png";
+import heroBg from "@/assets/baner 2.png";
 import Havo from "@/assets/icon.png";
-
+import Logo from "@/assets/logow.png";
 export const ProductSelector = () => {
   const { t } = useLanguage();
   const { activeProduct, setActiveProduct, statsRef } = useProduct(); // statsRef qo‘shildi
@@ -47,7 +47,12 @@ export const ProductSelector = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-6xl font-bold text-white mb-4"
           >
-            {t("hero.title")}
+    <div className="relative inline-block">
+  <img className="w-50 h-24" src={Logo} alt="Welkin Air Logo" />
+
+  <span className="absolute bottom-1 right-2 translate-x-[35px] w-5 h-5 bg-[#fec300] rounded-full"></span>
+</div>
+
           </motion.h1>
 
           <p className="text-white text-3xl mb-7">
@@ -67,8 +72,8 @@ export const ProductSelector = () => {
               className={`w-full sm:w-auto px-8 py-4 text-lg rounded-2xl font-semibold border-2 transition-all
                 ${
                   activeProduct === "recuperator"
-                    ? "bg-primary text-primary-foreground border-primary shadow-lg"
-                    : "bg-black/40 text-white border-white/20 hover:border-primary"
+                    ? "bg-[#fec300] text-primary-foreground border-[#fec300]shadow-lg"
+                    : "bg-black/40 text-white border-white/20 hover:border-[#fec300]"
                 }`}
             >
               <div className="flex items-center justify-center gap-2">
@@ -83,8 +88,8 @@ export const ProductSelector = () => {
               className={`w-full sm:w-auto px-8 py-4 text-lg rounded-2xl font-semibold border-2 transition-all
                 ${
                   activeProduct === "purifier"
-                    ? "bg-primary text-primary-foreground border-primary shadow-lg"
-                    : "bg-black/40 text-white border-white/20 hover:border-primary"
+                    ? "bg-[#fec300] text-primary-foreground border-[#fec300] shadow-lg"
+                    : "bg-black/40 text-white border-white/20 hover:border-[#fec300]"
                 }`}
             >
               <div className="flex items-center justify-center gap-2">

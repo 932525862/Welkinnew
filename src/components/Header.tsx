@@ -64,7 +64,7 @@ export const Header = () => {
                 return <a
                   key={item.href}
                   href={item.href}
-                  className="text-muted-foreground hover:text-primary transition-colors duration-300 font-medium text-sm"
+                  className="text-muted-foreground hover:text-[#fec300] transition-colors duration-300 font-medium text-sm"
                 >
                   {item.label}
                 </a>
@@ -77,9 +77,9 @@ export const Header = () => {
               <div className="relative" ref={dropdownRef}>
                 <button
                   onClick={() => setLangDropdownOpen(!langDropdownOpen)}
-                  className="flex items-center gap-2 px-3 py-2 bg-secondary rounded-lg hover:bg-secondary/80 transition-colors"
+                  className="flex items-center gap-2 px-3 py-2 bg-[#fec300] rounded-lg hover:bg-[#ffc400] transition-colors"
                 >
-                  <Globe className="w-4 h-4 text-muted-foreground" />
+                  <Globe className="w-4 h-4 text-[#000000]" />
                   <span className="text-sm font-medium">{currentLang.code.toUpperCase()}</span>
                   <ChevronDown className={`w-4 h-4 text-muted-foreground transition-transform ${langDropdownOpen ? 'rotate-180' : ''}`} />
                 </button>
