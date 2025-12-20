@@ -40,24 +40,20 @@ export const ProductSelector = () => {
       {/* Content */}
       <div className="relative pl-20 pt-32 pb-20 max-lg:pl-10 max-md:pl-4">
         <div className="max-w-3xl">
-
           {/* TITLE */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             className="text-6xl font-bold text-white mb-4"
           >
-    <div className="relative inline-block">
-  <img className="w-50 h-24" src={Logo} alt="Welkin Air Logo" />
+            <div className="relative inline-block">
+              <img className="w-50 h-24" src={Logo} alt="Welkin Air Logo`" />
 
-  <span className="absolute bottom-1 right-2 translate-x-[35px] w-5 h-5 bg-[#fec300] rounded-full"></span>
-</div>
-
+              <span className="absolute bottom-1 right-2 translate-x-[35px] w-5 h-5 bg-[#fec300] rounded-full"></span>
+            </div>
           </motion.h1>
 
-          <p className="text-white text-3xl mb-7">
-            {t("hero.title2")}
-          </p>
+          <p className="text-white text-3xl mb-7">{t("hero.title2")}</p>
 
           {/* BUTTONS */}
           <motion.div
@@ -104,14 +100,16 @@ export const ProductSelector = () => {
             {stats.map((stat, index) => {
               const Icon = stat.icon;
               return (
-                <div key={index} className="flex items-center gap-3 text-white text-xl mb-4">
+                <div
+                  key={index}
+                  className="flex items-center gap-3 text-white text-xl mb-4"
+                >
                   <Icon className="w-6 h-6" />
                   {stat.value}
                 </div>
               );
             })}
           </div>
-
         </div>
       </div>
     </section>

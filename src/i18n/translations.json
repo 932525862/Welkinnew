@@ -612,7 +612,7 @@
       "selectTitle": "Select Product",
       "recuperator": {
         "name": "Smart Recuperator",
-        "short": "Ventilation system"
+        "short": "Ventilation system" 
       },
       "purifier": {
         "name": "Air Purifier",
