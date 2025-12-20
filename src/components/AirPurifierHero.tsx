@@ -3,6 +3,8 @@ import { ArrowRight, Sparkles, Shield, Wind, Droplets } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import purifierImage from '@/assets/air-purifier-main.png';
+import Logo from "../assets/logow.png";
+
 
 export const AirPurifierHero = () => {
   const { t } = useLanguage();
@@ -49,7 +51,12 @@ export const AirPurifierHero = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-4"
             >
-              {t('purifier.hero.title')}
+               <div className="relative inline-block">
+  <img className="w-50 h-24" src={Logo} alt="Welkin Air Logo" />
+
+  <span className="absolute bottom-1 right-2 translate-x-[35px] w-5 h-5   rounded-full"></span>
+</div>
+
             </motion.h1>
 
             <motion.p

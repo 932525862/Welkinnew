@@ -3,7 +3,7 @@ import { ArrowRight, Sparkles, Gauge, Volume2 } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import heroBg from '@/assets/hero-bg.png';
-
+import Logo from '@/assets/logow.png';
 export const Hero = () => {
   const { t } = useLanguage();
 
@@ -51,7 +51,12 @@ export const Hero = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-4"
           >
-            {t('hero.title')}
+             <div className="relative inline-block">
+  <img className="w-50 h-24" src={Logo} alt="Welkin Air Logo" />
+
+  <span className="absolute bottom-1 right-2 translate-x-[35px] w-5 h-5 bg-[#fec300] rounded-full"></span>
+</div>
+
           </motion.h1>
 
           <motion.p
