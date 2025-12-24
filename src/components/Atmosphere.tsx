@@ -80,12 +80,28 @@ export const Atmosphere = () => {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="inline-flex items-center gap-3 px-6 py-4 bg-[#fec300] border border-fresh/20 rounded-2xl"
           >
-            <div className="w-10 h-10 bg-fresh rounded-full flex items-center justify-center flex-shrink-0">
-              <Check className="w-5 h-5 text-accent-foreground" />
-            </div>
             <p className="text-lg font-medium text-foreground text-left">
               {translations.atmosphere.conclusion}
             </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            className="mt-6"
+          >
+
+            <a href="#contact">
+            <button
+              className="px-8 py-4 bg-[#fec300] text-black font-semibold 
+               rounded-2xl shadow-lg 
+               hover:bg-[#e6b000] hover:scale-105 
+               transition-all duration-300"
+            >
+               {translations.atmosphere.button}
+            </button>
+            </a>
           </motion.div>
         </div>
       </div>

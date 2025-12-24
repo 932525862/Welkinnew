@@ -1,37 +1,37 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
-import { useRef } from 'react';
-import { Send, Phone, User, CheckCircle } from 'lucide-react';
-import { useLanguage } from '@/contexts/LanguageContext';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { toast } from '@/hooks/use-toast';
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
+import { Send, Phone, User, CheckCircle } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { toast } from "@/hooks/use-toast";
 
 export const ContactForm = () => {
   const { translations } = useLanguage();
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-100px' });
-  
-  const [formData, setFormData] = useState({ name: '', phone: '' });
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  const [formData, setFormData] = useState({ name: "", phone: "" });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!formData.name.trim() || !formData.phone.trim()) {
       return;
     }
 
     setIsSubmitting(true);
-    
+
     // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
+    await new Promise((resolve) => setTimeout(resolve, 1500));
+
     setIsSubmitting(false);
     setIsSuccess(true);
-    
+
     toast({
       title: translations.contact.form.success,
       description: translations.contact.form.successMessage,
@@ -40,12 +40,15 @@ export const ContactForm = () => {
     // Reset after showing success
     setTimeout(() => {
       setIsSuccess(false);
-      setFormData({ name: '', phone: '' });
+      setFormData({ name: "", phone: "" });
     }, 3000);
   };
 
   return (
-    <section id="contact" className="section-padding bg-gradient-sky relative overflow-hidden">
+    <section
+      id="contact"
+      className="section-padding bg-gradient-sky relative overflow-hidden"
+    >
       {/* Background Elements */}
       <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-background to-transparent" />
       <div className="absolute -top-20 right-1/4 w-80 h-80 bg-primary/10 rounded-full blur-3xl" />
@@ -107,7 +110,9 @@ export const ContactForm = () => {
                     <Input
                       type="text"
                       value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, name: e.target.value })
+                      }
                       placeholder={translations.contact.form.namePlaceholder}
                       className="pl-12 py-6 rounded-xl border-border bg-background/50 focus:border-primary focus:ring-primary"
                       required
@@ -124,7 +129,9 @@ export const ContactForm = () => {
                     <Input
                       type="tel"
                       value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, phone: e.target.value })
+                      }
                       placeholder={translations.contact.form.phonePlaceholder}
                       className="pl-12 py-6 rounded-xl border-border bg-background/50 focus:border-primary focus:ring-primary"
                       required
@@ -135,12 +142,17 @@ export const ContactForm = () => {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full btn-primary py-6 rounded-xl text-lg font-display font-semibold"
+                  className="w-full bg-[#fec300] text-black py-6 rounded-xl text-lg font-display font-semibold 
+             hover:bg-[#fec300] hover:scale-100" // hoverni olib tashlash
                 >
                   {isSubmitting ? (
                     <motion.div
                       animate={{ rotate: 360 }}
-                      transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
+                      transition={{
+                        duration: 1,
+                        repeat: Infinity,
+                        ease: "linear",
+                      }}
                       className="w-6 h-6 border-2 border-primary-foreground border-t-transparent rounded-full"
                     />
                   ) : (

@@ -1,31 +1,40 @@
-import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles, Shield, Wind, Droplets } from 'lucide-react';
-import { useLanguage } from '@/contexts/LanguageContext';
-import { Button } from '@/components/ui/button';
-import purifierImage from '@/assets/air-purifier-main.png';
+import { motion } from "framer-motion";
+import { ArrowRight, Sparkles, Shield, Wind, Droplets } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { Button } from "@/components/ui/button";
+import purifierImage from "@/assets/K-08A.png";
 import Logo from "../assets/logow.png";
-
 
 export const AirPurifierHero = () => {
   const { t } = useLanguage();
 
   const stats = [
-    { icon: Shield, value: t('purifier.hero.stats.filtration') },
-    { icon: Wind, value: t('purifier.hero.stats.cadr') },
-    { icon: Droplets, value: t('purifier.hero.stats.humidity') },
+    { icon: Shield, value: t("purifier.hero.stats.filtration") },
+    { icon: Wind, value: t("purifier.hero.stats.cadr") },
+    { icon: Droplets, value: t("purifier.hero.stats.humidity") },
   ];
 
   return (
-    <section id='home' className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-navy via-navy to-slate-900">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-navy via-navy to-slate-900"
+    >
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-pulse-slow" />
-        <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-primary/10 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '1s' }} />
+        <div
+          className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-primary/10 rounded-full blur-3xl animate-pulse-slow"
+          style={{ animationDelay: "1s" }}
+        />
         {/* Grid pattern */}
-        <div className="absolute inset-0 opacity-5" style={{
-          backgroundImage: 'linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)',
-          backgroundSize: '60px 60px'
-        }} />
+        <div
+          className="absolute inset-0 opacity-5"
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)",
+            backgroundSize: "60px 60px",
+          }}
+        />
       </div>
 
       {/* Content */}
@@ -38,10 +47,12 @@ export const AirPurifierHero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-accent/20 backdrop-blur-sm rounded-full border border-accent/30 mb-6"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-[#fec300] backdrop-blur-sm rounded-full border border-accent/30 mb-6"
             >
-              <Sparkles className="w-4 h-4 text-accent" />
-              <span className="text-sm font-medium text-primary-foreground">{t('purifier.hero.badge')}</span>
+              <Sparkles className="w-4 h-4 text-[#000000]" />
+              <span className="text-sm font-medium text-[#000000]">
+                {t("purifier.hero.badge")}
+              </span>
             </motion.div>
 
             {/* Title */}
@@ -51,21 +62,20 @@ export const AirPurifierHero = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-4"
             >
-               <div className="relative inline-block">
-  <img className="w-50 h-24" src={Logo} alt="Welkin Air Logo" />
+              <div className="relative inline-block">
+                <img className="w-50 h-24" src={Logo} alt="Welkin Air Logo" />
 
-  <span className="absolute bottom-1 right-2 translate-x-[35px] w-5 h-5   rounded-full"></span>
-</div>
-
+                <span className="absolute bottom-1 right-2 translate-x-[35px] w-5 h-5   rounded-full"></span>
+              </div>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="font-display text-2xl md:text-3xl font-semibold text-accent mb-6"
+              className="font-display text-2xl md:text-3xl font-semibold text-[#fec300] mb-6"
             >
-              {t('purifier.hero.subtitle')}
+              {t("purifier.hero.subtitle")}
             </motion.p>
 
             <motion.p
@@ -74,7 +84,7 @@ export const AirPurifierHero = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-lg text-primary-foreground/80 mb-8 max-w-xl leading-relaxed"
             >
-              {t('purifier.hero.description')}
+              {t("purifier.hero.description")}
             </motion.p>
 
             {/* Stats */}
@@ -89,8 +99,10 @@ export const AirPurifierHero = () => {
                   key={index}
                   className="flex items-center gap-3 px-4 py-3 bg-primary-foreground/10 backdrop-blur-sm rounded-xl border border-primary-foreground/20"
                 >
-                  <stat.icon className="w-5 h-5 text-accent" />
-                  <span className="text-sm font-medium text-primary-foreground">{stat.value}</span>
+                  <stat.icon className="w-5 h-5 text-[#fec300]" />
+                  <span className="text-sm font-medium text-primary-foreground">
+                    {stat.value}
+                  </span>
                 </div>
               ))}
             </motion.div>
@@ -104,10 +116,14 @@ export const AirPurifierHero = () => {
             >
               <Button
                 size="lg"
-                className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-xl px-8 py-6 text-lg font-display font-semibold"
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                className="bg-[#fec300] hover:bg-[#fec300] text-[#000000] rounded-xl px-8 py-6 text-lg font-display font-semibold"
+                onClick={() =>
+                  document
+                    .getElementById("contact")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
               >
-                {t('purifier.hero.cta')}
+                {t("purifier.hero.cta")}
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </motion.div>
@@ -123,7 +139,7 @@ export const AirPurifierHero = () => {
             <div className="relative">
               {/* Glow effect */}
               <div className="absolute inset-0 bg-accent/30 blur-3xl rounded-full scale-75" />
-              
+
               <img
                 src={purifierImage}
                 alt="Welkin Air Purifier"
@@ -134,15 +150,15 @@ export const AirPurifierHero = () => {
               <motion.div
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 3, repeat: Infinity }}
-                className="absolute -top-4 -right-4 px-4 py-2 bg-green-500/90 rounded-full text-white text-sm font-semibold"
+                className="absolute -top-4 -right-4 px-4 py-2 bg-[#fec300] rounded-full text-white text-sm font-semibold"
               >
-                99% {t('purifier.hero.purification')}
+                99% {t("purifier.hero.purification")}
               </motion.div>
-              
+
               <motion.div
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 3, repeat: Infinity, delay: 1 }}
-                className="absolute bottom-1/4 -left-4 px-4 py-2 bg-blue-500/90 rounded-full text-white text-sm font-semibold"
+                className="absolute bottom-1/4 -left-4 px-4 py-2 bg-[#fec300] rounded-full text-white text-sm font-semibold"
               >
                 HEPA H13
               </motion.div>

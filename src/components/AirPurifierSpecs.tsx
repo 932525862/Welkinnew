@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import purifierImage from '@/assets/air-purifier-main.png';
+import purifierImage from '@/assets/K-08A.png';
 
 export const AirPurifierSpecs = () => {
   const { translations, t } = useLanguage();
@@ -46,14 +46,14 @@ export const AirPurifierSpecs = () => {
               <div className="absolute inset-0 bg-accent/10 blur-3xl rounded-full" />
               <img
                 src={purifierImage}
-                alt="Welkin Air Purifier"
+                alt="K-08A"
                 className="relative w-full max-w-md rounded-2xl shadow-2xl"
               />
               {/* Badges */}
-              <div className="absolute -top-2 -right-2 px-3 py-1.5 bg-accent rounded-full text-accent-foreground text-xs font-semibold">
+              <div className="absolute -top-2 -right-2 px-3 py-1.5 bg-[#fec300] rounded-full text-accent-foreground text-xs font-semibold">
                 99%
               </div>
-              <div className="absolute -bottom-2 -left-2 px-3 py-1.5 bg-green-500 rounded-full text-white text-xs font-semibold">
+              <div className="absolute -bottom-2 -left-2 px-3 py-1.5 bg-[#fec300] rounded-full text-white text-xs font-semibold">
                 HEPA H13
               </div>
             </div>
@@ -80,6 +80,22 @@ export const AirPurifierSpecs = () => {
               ))}
             </div>
           </motion.div>
+
+           <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="mt-12 text-center"
+        >
+          <a
+            href="#contact"
+            className="px-8 py-4 bg-[#fec300] text-black font-semibold 
+            rounded-2xl shadow-lg hover:bg-[#e6b000] hover:scale-105 
+            transition-all duration-300 inline-block"
+          >
+            {translations.atmosphere.button}
+          </a>
+        </motion.div>
         </div>
       </div>
     </section>

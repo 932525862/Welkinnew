@@ -1,6 +1,6 @@
 import { Wind, Mail, Phone, MapPin } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
-
+import logo from "../assets/welkinLogo.png"
 export const Footer = () => {
   const { translations } = useLanguage();
 
@@ -10,12 +10,10 @@ export const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo & Description */}
           <div className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-xl bg-gradient-hero flex items-center justify-center">
-              <Wind className="w-7 h-7 text-primary-foreground" />
-            </div>
+            
             <div>
               <h3 className="font-display text-xl font-bold text-primary-foreground">
-                Welkin <span className="text-primary">Air</span>
+               <img className='w-30 h-10' src={logo} alt="" />
               </h3>
               <p className="text-sm text-primary-foreground/60">
                 {translations.footer.description}

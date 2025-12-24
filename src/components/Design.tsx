@@ -32,7 +32,7 @@ export const Design = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
-            className="inline-block px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-medium mb-4"
+            className="inline-block px-4 py-2 bg-[#fec300] rounded-full text-[#000000] text-sm font-medium mb-4"
           >
             {translations.design?.badge}
           </motion.span>
@@ -79,9 +79,9 @@ export const Design = () => {
                 initial={{ opacity: 0, x: -20 }}
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.6 }}
-                className="absolute top-6 left-6 px-4 py-2 bg-gradient-to-r from-amber-500 to-amber-600 rounded-full text-white text-sm font-semibold flex items-center gap-2"
+                className="absolute top-6 left-6 px-4 py-2 bg-gradient-to-r from-[#fec300] to-[#fec300] rounded-full text-white text-sm font-semibold flex items-center gap-2"
               >
-                <Award className="w-4 h-4" />
+                <Award className="w-4 h-4 " />
                 Premium
               </motion.div>
             </div>
@@ -99,8 +99,8 @@ export const Design = () => {
                   transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
                   className="flex gap-4 p-4 bg-card/50 backdrop-blur-sm rounded-xl border border-border hover:border-primary/30 hover:bg-card transition-all duration-300"
                 >
-                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <IconComponent className="w-6 h-6 text-primary" />
+                  <div className="w-12 h-12 bg-[#fec300] rounded-xl flex items-center justify-center flex-shrink-0">
+                    <IconComponent className="w-6 h-6 text-[#000000] " />
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">{feature.title}</h3>
@@ -122,6 +122,22 @@ export const Design = () => {
           <blockquote className="text-xl md:text-2xl font-display text-foreground/80 italic max-w-3xl mx-auto">
             "{translations.design?.quote}"
           </blockquote>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="mt-12 text-center"
+        >
+          <a
+            href="#contact"
+            className="px-8 py-4 bg-[#fec300] text-black font-semibold 
+            rounded-2xl shadow-lg hover:bg-[#e6b000] hover:scale-105 
+            transition-all duration-300 inline-block"
+          >
+            {translations.atmosphere.button}
+          </a>
         </motion.div>
       </div>
     </section>

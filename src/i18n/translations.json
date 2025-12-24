@@ -152,7 +152,9 @@
         "Yomon ventilyatsiya allergiya va nafas olish muammolariga olib keladi",
         "Toza havo uyqu sifati va konsentratsiyani yaxshilaydi"
       ],
-      "conclusion": "Welkin Air - bu sizning oilangiz salomatligi uchun eng yaxshi sarmoya."
+      "conclusion": "Welkin Air - bu sizning oilangiz salomatligi uchun eng yaxshi sarmoya.",
+      "button": "Hozir buyurtma qilish",
+      "button1" : "Buyurtma qilish"
     },
     "benefits": {
       "title": "Recuperator afzalliklari",
@@ -452,7 +454,9 @@
         "Плохая вентиляция вызывает аллергию и проблемы с дыханием",
         "Чистый воздух улучшает качество сна и концентрацию"
       ],
-      "conclusion": "Welkin Air — лучшая инвестиция в здоровье вашей семьи."
+      "conclusion": "Welkin Air — лучшая инвестиция в здоровье вашей семьи.",
+      "button": "Заказать сейчас",
+      "button1" : "Заказать"
     },
     "benefits": {
       "title": "Преимущества рекуператора",
@@ -752,7 +756,9 @@
         "Poor ventilation causes allergies and respiratory problems",
         "Clean air improves sleep quality and concentration"
       ],
-      "conclusion": "Welkin Air is the best investment in your family's health."
+      "conclusion": "Welkin Air is the best investment in your family's health.",
+      "button": "Order Now",
+      "button1" : "Order"
     },
     "benefits": {
       "title": "Recuperator Benefits",

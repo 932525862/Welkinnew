@@ -11,7 +11,7 @@ import {
   Zap
 } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import filtersImage from '@/assets/air-purifier-filters.png';
+import filtersImage from '@/assets/k-86.png';
 
 const filterIcons = [Shield, Leaf, Bug, Wind, Sparkles, Sun, Zap];
 
@@ -37,7 +37,7 @@ export const AirPurifierFiltration = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-2 bg-accent/20 rounded-full text-accent text-sm font-medium mb-4"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-[#fec300] rounded-full text-[#000000] text-sm font-medium mb-4"
           >
             <Shield className="w-4 h-4" />
             {t('purifier.filtration.badge')}
@@ -84,7 +84,7 @@ export const AirPurifierFiltration = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.5 }}
-                className="absolute bottom-4 left-1/2 -translate-x-1/2 px-6 py-3 bg-gradient-to-r from-green-500 to-accent rounded-full text-white font-semibold"
+                className="absolute bottom-4 left-1/2 -translate-x-1/2 px-6 py-3 bg-[#fec300] rounded-full text-[#000000] font-semibold"
               >
                 7 {t('purifier.filtration.layers')}
               </motion.div>
@@ -104,9 +104,9 @@ export const AirPurifierFiltration = () => {
                   className="group p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:bg-white/10 hover:border-accent/30 transition-all duration-300"
                 >
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-accent/30 to-green-500/30 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:from-accent/50 group-hover:to-green-500/50 transition-colors">
+                    {/* <div className="w-12 h-12 bg-gradient-to-br from-accent/30 to-green-500/30 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:from-accent/50 group-hover:to-green-500/50 transition-colors">
                       <IconComponent className="w-6 h-6 text-accent" />
-                    </div>
+                    </div> */}
                     <div>
                       <h3 className="font-semibold text-primary-foreground mb-1">{filter.title}</h3>
                       <p className="text-sm text-primary-foreground/60 leading-relaxed">{filter.description}</p>
@@ -132,7 +132,7 @@ export const AirPurifierFiltration = () => {
             { value: 'HEPA H13', label: t('purifier.filtration.stat4') },
           ].map((stat, index) => (
             <div key={index} className="text-center p-4 bg-white/5 rounded-xl">
-              <p className="text-2xl md:text-3xl font-bold text-accent mb-1">{stat.value}</p>
+              <p className="text-2xl md:text-3xl font-bold text-[#fec300] mb-1">{stat.value}</p>
               <p className="text-sm text-primary-foreground/60">{stat.label}</p>
             </div>
           ))}
