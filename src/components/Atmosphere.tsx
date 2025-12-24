@@ -1,15 +1,17 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
-import { useRef } from 'react';
-import { Check, Heart, Home, Building } from 'lucide-react';
-import { useLanguage } from '@/contexts/LanguageContext';
-
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
+import { Check, Heart, Home, Building } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import Icon1 from "@/assets/iconss2.png";
+import Icon2 from "@/assets/iconss3.png";
+import Icon3 from "@/assets/iconss4.png";
 export const Atmosphere = () => {
   const { translations } = useLanguage();
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-100px' });
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  const icons = [Home, Building, Heart];
+  const icons = [Icon1, Icon2, Icon3];
 
   return (
     <section className="section-padding bg-gradient-sky relative overflow-hidden">
@@ -42,23 +44,33 @@ export const Atmosphere = () => {
 
           {/* Points */}
           <div className="grid md:grid-cols-3 gap-6 mb-12">
-            {translations.atmosphere.points.map((point: string, index: number) => {
-              const Icon = icons[index];
-              return (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
-                  className="glass-card p-6 rounded-2xl hover:shadow-card transition-shadow duration-300"
-                >
-                  <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <Icon className="w-7 h-7 text-primary" />
-                  </div>
-                  <p className="text-foreground font-medium">{point}</p>
-                </motion.div>
-              );
-            })}
+            {translations.atmosphere.points.map(
+              (point: string, index: number) => {
+                const Icon = icons[index];
+                return (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={isInView ? { opacity: 1, y: 0 } : {}}
+                    transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
+                    className="glass-card p-6 rounded-2xl hover:shadow-card transition-shadow duration-300"
+                  >
+                    <div
+                      className="w-14 h-14 mx-auto mb-4 rounded-2xl 
+                bg-gradient-to-br from-[#fec300] to-[#fec300]
+                flex items-center justify-center shadow-lg"
+                    >
+                      <img
+                        src={Icon}
+                        alt="icon"
+                        className="w-10 h-10 object-contain"
+                      />
+                    </div>
+                    <p className="text-foreground font-medium">{point}</p>
+                  </motion.div>
+                );
+              }
+            )}
           </div>
 
           {/* Conclusion */}
@@ -66,7 +78,7 @@ export const Atmosphere = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="inline-flex items-center gap-3 px-6 py-4 bg-fresh/10 border border-fresh/20 rounded-2xl"
+            className="inline-flex items-center gap-3 px-6 py-4 bg-[#fec300] border border-fresh/20 rounded-2xl"
           >
             <div className="w-10 h-10 bg-fresh rounded-full flex items-center justify-center flex-shrink-0">
               <Check className="w-5 h-5 text-accent-foreground" />

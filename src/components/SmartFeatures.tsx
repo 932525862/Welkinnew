@@ -43,7 +43,7 @@ export const SmartFeatures = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-2 bg-primary/20 rounded-full text-primary text-sm font-medium mb-4"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-[#fec300] rounded-full text-[#0c0c0c] text-sm font-medium mb-4"
           >
             <Zap className="w-4 h-4" />
             {translations.smart?.badge}
@@ -80,8 +80,8 @@ export const SmartFeatures = () => {
                   className="group p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:bg-white/10 hover:border-primary/30 transition-all duration-300"
                 >
                   <div className="flex items-start gap-3">
-                    <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-primary/30 transition-colors">
-                      <IconComponent className="w-5 h-5 text-primary" />
+                    <div className="w-10 h-10 bg-[#fec300] rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-[#fec300]/30 transition-colors">
+                      <IconComponent className="w-5 h-5 text-[#090909]" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-primary-foreground mb-1">{feature.title}</h3>
@@ -141,8 +141,8 @@ export const SmartFeatures = () => {
                   className="group p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:bg-white/10 hover:border-primary/30 transition-all duration-300"
                 >
                   <div className="flex items-start gap-3">
-                    <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-primary/30 transition-colors">
-                      <IconComponent className="w-5 h-5 text-primary" />
+                    <div className="w-10 h-10 bg-[#fec300] rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-[#fec300] /30 transition-colors">
+                      <IconComponent className="w-5 h-5 text-[#090909]" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-primary-foreground mb-1">{feature.title}</h3>

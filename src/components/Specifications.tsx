@@ -47,7 +47,7 @@ export const Specifications = () => {
                 className="w-full max-w-xl rounded-2xl shadow-2xl shadow-slate-300/30"
               />
               {/* Simple badges */}
-              <div className="absolute -top-2 -right-2 px-3 py-1.5 bg-primary rounded-full text-primary-foreground text-xs font-semibold">
+              <div className="absolute -top-2 -right-2 px-3 py-1.5 bg-[#fec300] rounded-full text-[#060606] text-xs font-semibold">
                 82%
               </div>
             </div>
