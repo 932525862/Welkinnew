@@ -149,7 +149,7 @@ export const AirPurifierFeatures = () => {
             })}
           </div>
         </div>
-
+          
         {/* App Download Section */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
