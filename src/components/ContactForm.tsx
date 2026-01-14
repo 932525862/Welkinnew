@@ -47,7 +47,7 @@ export const ContactForm = () => {
   return (
     <section
       id="contact"
-      className="section-padding bg-gradient-sky relative overflow-hidden"
+      className="font-serif section-padding bg-gradient-sky relative overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-background to-transparent" />

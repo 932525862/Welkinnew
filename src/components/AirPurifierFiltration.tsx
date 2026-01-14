@@ -23,7 +23,7 @@ export const AirPurifierFiltration = () => {
   const filters = translations.purifier?.filtration?.filters || [];
 
   return (
-    <section id='features' className="section-padding bg-gradient-to-b from-navy to-slate-900 text-primary-foreground relative overflow-hidden">
+    <section id='features' className="font-serif section-padding bg-gradient-to-b from-navy to-slate-900 text-primary-foreground relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />

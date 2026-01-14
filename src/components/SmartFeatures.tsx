@@ -24,7 +24,7 @@ export const SmartFeatures = () => {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section id="smart" className="section-padding bg-navy text-primary-foreground relative overflow-hidden">
+    <section id="smart" className="font-serif section-padding bg-navy text-primary-foreground relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />

@@ -44,7 +44,7 @@ export const ProductSelector = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center overflow-hidden"
+      className="font-serif relative min-h-screen flex items-center overflow-hidden"
     >
       {/* Background */}
       <div className="absolute inset-0">

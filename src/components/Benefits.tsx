@@ -31,7 +31,7 @@ export const Benefits = () => {
   return (
     <section
       id="features"
-      className="section-padding relative overflow-hidden bg-navy"
+      className="font-serif section-padding relative overflow-hidden bg-navy"
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">

@@ -10,7 +10,7 @@ export const Specifications = () => {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section id="specs" className="section-padding bg-secondary/30 relative overflow-hidden">
+    <section id="specs" className="font-serif section-padding bg-secondary/30 relative overflow-hidden">
       <div ref={ref} className="container-custom relative">
         {/* Header */}
         <div className="text-center mb-12">

@@ -16,7 +16,7 @@ export const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center overflow-hidden"
+      className="font-serif relative min-h-screen flex items-center overflow-hidden"
     >
       {/* Background Image */}
       <div className="absolute inset-0">

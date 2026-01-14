@@ -14,7 +14,7 @@ export const Atmosphere = () => {
   const icons = [Icon1, Icon2, Icon3];
 
   return (
-    <section className="section-padding bg-gradient-sky relative overflow-hidden">
+    <section className="font-serif section-padding bg-gradient-sky relative overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-background to-transparent" />
       <div className="absolute -top-20 -right-20 w-80 h-80 bg-primary/5 rounded-full blur-3xl" />

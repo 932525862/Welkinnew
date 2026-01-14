@@ -12,7 +12,7 @@ export const AirPurifierSpecs = () => {
   const specs = translations.purifier?.specs?.items || [];
 
   return (
-    <section id='specs' className="section-padding bg-background relative overflow-hidden">
+    <section id='specs' className="font-serif section-padding bg-background relative overflow-hidden">
       <div ref={ref} className="container-custom relative">
         {/* Header */}
         <div className="text-center mb-12">

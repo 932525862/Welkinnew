@@ -20,7 +20,7 @@ export const Design = () => {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section id="design" className="section-padding bg-gradient-to-b from-background to-secondary/20 relative overflow-hidden">
+    <section id="design" className="font-serif section-padding bg-gradient-to-b from-background to-secondary/20 relative overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute top-0 left-1/4 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />

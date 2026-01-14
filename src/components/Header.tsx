@@ -44,7 +44,7 @@ export const Header = () => {
   ] 
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50">
+    <header className="font-serif fixed top-0 left-0 right-0 z-50">
       <motion.div
         initial={{ y: -100 }}
         animate={{ y: 0 }}
